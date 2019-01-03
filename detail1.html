@@ -339,8 +339,9 @@
 	}
 	img1.onmousemove=function(ev){
 		var ev=ev || window.event;
+		var offset=document.documentElement.scrollTop;
 		var left=ev.clientX-img1.offsetLeft-spray0.offsetLeft-slider.offsetWidth/2;
-		var top=ev.clientY-img1.offsetTop-spray0.offsetTop-spray1.offsetTop/5-slider.offsetHeight/2;
+		var top=ev.clientY-img1.offsetTop-spray0.offsetTop-spray1.offsetTop/5-slider.offsetHeight/2+offset;
 		var maxLeft=img1.offsetWidth-slider.offsetWidth;
 		var maxTop=img1.offsetHeight-slider.offsetHeight;
 		left=left>maxLeft?maxLeft:left<0?0:left;
