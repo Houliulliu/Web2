@@ -162,12 +162,12 @@ body,p,img{
 #img1{
 	width: 408px;
 	height: 408px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	border:1px solid #d0cdc7;
 	position:absolute;
 	left:0;
 	top:0;
-	float: left;
+	/*float: left;*/
 }
 #slider{
 	width:208.08px;
@@ -190,12 +190,19 @@ body,p,img{
 	display:none;
 	overflow:hidden;
 	border: 1px dotted purple;
-	float: left;
+	z-index: 1000;
+	left: 408px;
+	/*float: left;*/
 }
 #Bimg{
 	position:absolute;
 	left:0;
 	top:0;
+}
+#div11{
+	width: 816px;
+	height: 408px;
+	overflow: hidden;
 }
 .han{
 	width: 470px;
@@ -203,7 +210,8 @@ body,p,img{
 	margin-top: 20px;
 	float: left;
 	margin-left: 460px;
-	/*position: relative;*/
+	position: relative;
+	margin-top: -400px;
 }
 .penwu{
 	font-size: 14px;

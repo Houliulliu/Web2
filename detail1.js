@@ -4,7 +4,7 @@ window.onload=function(){
 		var st=document.documentElement.scrollTop || document.body.onscroll;
 		if(st>120){
 			cover.style.position='fixed';
-			cover.style.zIndex = "999";
+			cover.style.zIndex = "1001";
 		}else{
 			cover.style.position='static';
 		}
